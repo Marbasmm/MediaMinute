@@ -41,7 +41,10 @@
 // 3. PAGE STYLES
 // -------------------------------------------------- 
 //	3.1 BREAKING NEWS								*/
-
+p {
+	border: 5px solid grey;
+	background: grey;
+}
 /* 	3.2 USER-GENERATED HEADLINES 					*/
 
 /* 	3.3 INTERACTIVE AREA 		 					*/
