@@ -1,14 +1,194 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <link rel="Style" href="styles.css">
+		<meta charset="UTF-8" />
+
 		<title> Media Minute </title>
+
+		<!-- Responsive - Scale screens correctly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap Styles - v3.2.0 -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+        <!-- Custom Styles - Media Minute -->
+	    <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- Google Web Fonts: Oswald (Light, Normal, Bold) -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css' />
+
+        <!-- Scott Jehl's IE Compatibility:
+        Works with older versions of IE, has to be inside the HEAD tag 
+    	(https://github.com/scottjehl/Respond/tree/master/src) -->
+        <script src="assets/js/respond.js"></script> 
+
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" /> 
 	</head>
+
 	<body>
-	  <img src="assets/css/MediaMinute-Logo.png" alt=	"Media Minute" width="185" height="90">
-    <p style="text-align: left; color: #DD6200; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;">HK PROTESTERS ABANDON TWO SITES AHEAD OF MONDAY DEADLINE  | AUSTRALIA ACCUSED OF IGNORING THREATS TO ASIA'S FREEDOMS</p>
-		<br>
-		<br>
-		<h2> Touch to Begin </h2>
+
+		<section id="top-bar">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" >
+                    <img src="assets/images/logo.png" alt="Media Minute Logo" />
+                </div>
+            </div>
+	    </section>
+
+	    <section id="breaking-news">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" >
+                	<p>
+                		<span>HK PROTESTERS ABANDON TWO SITES AHEAD OF MONDAY DEADLINE</span> | 
+                		<span>AUSTRALIA ACCUSED OF IGNORING THREATS TO ASIA'S FREEDOMS</span> |
+                		<span>HK PROTESTERS ABANDON TWO SITES AHEAD</span>
+                	</p>
+                </div>
+            </div>
+	    </section>
+
+	    <section id="user-headlines">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" >
+                	<div class="headline">
+                		<div class="image" style="background: url(assets/images/news01.jpg) no-repeat;"></div>
+                		<p class="title">Air Canada pilots who are flying high on drugs have been warned...</p>
+                		<p class="city sydney">Sydney</p>
+                	</div>
+
+                	<div class="headline">
+                		<div class="image" style="background: url(assets/images/news02.jpg) no-repeat;"></div>
+                		<p class="title">Air Canada pilots who are flying high on drugs have been warned...</p>
+                		<p class="city melbourne">Melbourne</p>
+                	</div>
+
+                	<div class="headline">
+                		<div class="image" style="background: url(assets/images/news01.jpg) no-repeat;"></div>
+                		<p class="title">Air Canada pilots who are flying high on drugs have been warned...</p>
+                		<p class="city brisbane">Brisbane</p>
+                	</div>
+
+                	<div class="headline">
+                		<div class="image" style="background: url(assets/images/news01.jpg) no-repeat;"></div>
+                		<p class="title">Air Canada pilots who are flying high on drugs have been warned...</p>
+                		<p class="city sydney">Sydney</p>
+                	</div>
+
+                	<div class="headline">
+                		<div class="image" style="background: url(assets/images/news02.jpg) no-repeat;"></div>
+                		<p class="title">Air Canada pilots who are flying high on drugs have been warned...</p>
+                		<p class="city melbourne">Melbourne</p>
+                	</div>
+
+
+                </div>
+            </div>
+	    </section>
+
+	    <section id="interactive-area">
+            <div class="row">
+                <div class="col-lg-4 col-md-14 col-sm-4 booth" >
+                	<div class="start-button">
+                		<p>TOUCH TO START</p>
+
+
+                	</div>
+                </div>
+
+                <div class="col-lg-4 col-md-14 col-sm-4 booth" >
+                	<div class="time-selector">
+                		<img src="assets/images/logo.png" alt="Media Minute Logo" width="84" height="40" />
+                		<h2>WELCOME!</h2>
+                		<p>How much time do you have?</p>
+                		<img src="assets/images/time-demo.png" alt="Time selector demo" />
+                		<div><a href="#">GO!</a></div>
+                	</div>
+                </div>
+
+                 <div class="col-lg-4 col-md-14 col-sm-4 booth" >
+                	<div class="category-selector">
+                		<h2>CHOOSE A CATEGORY</h2>
+            			<table>
+            				<tr>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news01.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Sports</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news02.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Art</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news01.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Politics</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news02.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Entertainment</p>
+            						</a>
+            					</td>
+            				</tr>
+
+            				<tr>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news01.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Sports</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news02.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Art</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news01.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Politics</p>
+            						</a>
+            					</td>
+            					<td>
+            						<a href="#">
+                						<img src="assets/images/news02.jpg" alt="Category picture" class="img-responsive" />
+                						<p>Entertainment</p>
+            						</a>
+            					</td>
+            				</tr>
+            			</table>
+
+                		<div><a href="#" class="button">CONTINUE</a></div>
+
+                	</div>
+                </div>
+
+            </div>
+
+	    </section>
+
+
+	
+	<div class="silhouette melbourne">
+    	<img src="assets/images/woman-demo.png" alt="Remote female user" width="306" height="400" />
+    </div>
+
+    <div class="silhouette sydney">
+    	<img src="assets/images/man-demo.png" alt="Remote male user" width="306" height="400" />
+    </div>
+
+
+	<!-- Javascript: Loads when the rest of the webpage is already loaded -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- jQuery: Latest version -->
+
+    <!-- Bootstrap JS: After jQuery because it depends on jQuery -->
+	<script src="assets/js/bootstrap.min.js"></script> <!-- After jQuery because it depends on it -->
+
 	</body>
 </html>	
