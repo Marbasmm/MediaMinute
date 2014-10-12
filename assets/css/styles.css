@@ -25,322 +25,310 @@
 
 html {
   margin: 0;
-  height:100%;
+  height: 100%;
 }
-
 body {
   font-family: Arial, sans-serif;
   line-height: 20px;
   padding-bottom: 40px;
-  color: #4A4C55;
-  height:100%;
-  background-color: #27282C;
+  color: #4a4c55;
+  height: 100%;
+  background-color: #27282c;
 }
-
-html, body, div, h1, h2, h3, h4, h5, h6, p, a, span, ul, ol, li, img {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol,
+li,
+img {
   margin: 0;
   padding: 0;
   outline: none;
   border: 0;
   text-decoration: none !important;
-} 
-
-body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2,
-body .h3, body .h4, body .h5, body .h6 {
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .h1,
+body .h2,
+body .h3,
+body .h4,
+body .h5,
+body .h6 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   color: inherit;
   line-height: 40px;
 }
-
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
-
 .float-left {
   float: left;
 }
-
 .float-right {
   float: right;
+}
+.img-responsive {
+  /*Workaraund for non-resposive images*/
+  width: 100%;
 }
 /*
 // END: MAIN LAYOUT STYLES
 // -------------------------------------------------- */
-
-
 
 /*
 // 2. GENERAL STYLES
 // -------------------------------------------------- */
 
 #top-bar {
-  background-color: #FFF;
-  padding: 15px 0;
+  background-color: white;
+  padding: 10px 0;
   text-align: center;
 }
-
-
 /*
 // END: GENERAL STYLES
 // -------------------------------------------------- */
-
 
 /*
 // 3. PAGE STYLES
 // -------------------------------------------------- */
 
-
-  /*
+/*
   // 3.1 BREAKING NEWS
   // -------------------------------------------------- */
 
-  #breaking-news {
-    background: url(../images/BN-bkg.jpg) repeat-x; 
-    text-align: center;
-    height: 46px;
-  }
-  #breaking-news p{
-    color: #808284;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    padding-top: 14px;
-  }
-  #breaking-news p span{
-    color: #F16524;
-    font-weight: 400;
-    padding: 0 10px;
-    text-shadow: 0 1px 1px RGBA(0,0,0,0.4);
-  }
-
-  /*
+#breaking-news {
+  background: url(../images/BN-bkg.jpg) repeat-x;
+  text-align: center;
+  height: 46px;
+}
+#breaking-news p {
+  color: #808284;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding-top: 14px;
+}
+#breaking-news p span {
+  color: #f16524;
+  font-weight: 400;
+  padding: 0 10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+/*
   // 3.2 USER-GENERATED HEADLINES
   // -------------------------------------------------- */
 
-  #user-headlines {
-    background-color: #FFF;
-    padding: 20px 0 15px 0;
-  }
-
-  .headline {
-    display: inline-block;
-    width: 240px;
-    position: relative;
-    margin: 0 10px;
-  }
-
-  .headline .image {
-    width: 65px;
-    height: 65px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    float: left;
-    position: relative;
-    z-index: 3;
-  }
-
-  .headline p.title{
-    position: absolute;
-    right: 0;
-    top: 4px;
-    color: #808284;
-    font-family: 'Oswald', sans-serif;
-    width: 90%;
-    font-size: 12px;
-    background-color: #E0E0E0;
-    padding: 6px 10px 6px 45px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    z-index: 2;
-    line-height: 14px;
-  }
-
-  .headline p.city{
-    width: 90px;
-    position: absolute;
-    left: 40px;
-    top: 40px;
-    color: #FFF;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    padding: 3px 0 0 30px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    z-index: 1;
-  }
-
-  .headline p.sydney{
-    background-color: #1B63CC;
-  }
-
-  .headline p.melbourne{
-    background-color: #56CE17;
-  }
-
-  .headline p.brisbane{
-    background-color: #CC1736;
-  }
-
-  /*
+#user-headlines {
+  background-color: white;
+  padding: 20px 0 15px 0;
+}
+.headline {
+  display: inline-block;
+  width: 240px;
+  position: relative;
+  margin: 0 10px;
+}
+.headline:hover {
+  cursor: pointer;
+}
+.headline .image {
+  width: 65px;
+  height: 65px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+.headline p.title {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  color: #808284;
+  font-family: 'Oswald', sans-serif;
+  width: 90%;
+  font-size: 12px;
+  background-color: #e0e0e0;
+  padding: 6px 10px 6px 45px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  z-index: 2;
+  line-height: 14px;
+}
+.headline p.city {
+  width: 90px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  padding: 3px 0 0 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  z-index: 1;
+}
+.headline p.sydney {
+  background-color: #1b63cc;
+}
+.headline p.melbourne {
+  background-color: #56ce17;
+}
+.headline p.brisbane {
+  background-color: #cc1736;
+}
+/*
   // 3.3 INTERACTIVE AREA
   // -------------------------------------------------- */
 
-  #interactive-area {
-    background: url(../images/IA-bkg.jpg) repeat-x top;
-  }
-
-  .booth {
-  }
-
-  .start-button {
-    background: url(../images/start-button.png) no-repeat center;
-    width: 140px;
-    height: 140px;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    padding-top: 80px;
-    cursor: pointer;
-  }
-
-  .start-button p {
-    color: #27282C;
-    font-size: 16px;
-  }
-
-  .time-selector {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    text-align: center;
-    padding: 20px 0;
-    width: 60%;
-    margin: 30px auto 0 auto;
-  }
-
-  .time-selector h2, .category-selector h2 {
-    font-weight: 300;
-    font-size: 22px;
-  }
-
-  .time-selector p {
-    padding-bottom: 15px;
-  }
-
-  .time-selector a {
-    margin: 20px 0 0 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    padding: 3px 15px;
-
-  }
-
-  .time-selector a:link, .time-selector a:visited {
-    color: #FFF;
-    background-color: #27282C;
-  }
-
-  .time-selector a:hover {
-    color: #FFF;
-    background-color: #F16524;
-
-  }
-
-  .category-selector {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    text-align: center;
-    padding: 20px 10px;
-    width: 80%;
-    margin: 30px auto 0 auto;
-  }
-
-  .category-selector table {
-    margin-top: 15px;
-    text-align: center;
-  }
-
-  .category-selector table a img {
-    opacity: 0.8;
-  }
-
-  .category-selector table a p {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .category-selector table a:link p {
-    color: #4A4C55;
-  }
-
-  .category-selector table a:hover p {
-    color: #F16524;
-  }
-
-  .category-selector table a:hover img {
-    opacity: 1;
-  }
-
-  .category-selector a.button {
-    margin: 15px 0 0 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    padding: 3px 15px;
-
-  }
-
-  .category-selector a.button:link, .category-selector a.button:visited {
-    color: #FFF;
-    background-color: #27282C;
-  }
-
-  .category-selector a.button:hover {
-    color: #FFF;
-    background-color: #F16524;
-
-  }
-
-  .silhouette {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-  }
-
-  .silhouette.melbourne {
-    left: 140px; 
-  }
-
-  .silhouette.sydney {
-    right: 240px; 
-  }
-
-
-  /* 
+#interactive-area {
+  background: url(../images/IA-bkg.jpg) repeat-x top;
+}
+.start-button {
+  background: url(../images/start-button.png) no-repeat center;
+  width: 140px;
+  height: 140px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  padding-top: 80px;
+  cursor: pointer;
+}
+.start-button p {
+  color: #27282c;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.time-selector {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+  width: 30%;
+  margin: 30px auto 0 auto;
+}
+.time-selector h2,
+.category-selector h2 {
+  font-weight: 300;
+  font-size: 28px;
+}
+.time-selector p {
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+.time-selector a {
+  margin: 20px 0 0 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 3px 15px;
+}
+.time-selector a:link,
+.time-selector a:visited {
+  color: white;
+  background-color: #27282c;
+}
+.time-selector a:hover {
+  color: white;
+  background-color: #f16524;
+}
+#selector-container {
+  overflow: hidden;
+  width: 100px;
+  margin: 0 auto;
+}
+.category-selector {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+  width: 40%;
+  margin: 30px auto 0 auto;
+}
+.category-selector table {
+  margin-top: 15px;
+  text-align: center;
+}
+.category-selector table a img {
+  opacity: 0.8;
+}
+.category-selector table a p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.category-selector table a:link p {
+  color: #4a4c55;
+}
+.category-selector table a:hover p {
+  color: #f16524;
+}
+.category-selector table a:hover img {
+  opacity: 1;
+}
+.category-selector a.button {
+  margin: 15px 0 0 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 3px 15px;
+}
+.category-selector a.button:link,
+.category-selector a.button:visited {
+  color: white;
+  background-color: #27282c;
+}
+.category-selector a.button:hover {
+  color: white;
+  background-color: #f16524;
+}
+.silhouette {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.silhouette.melbourne {
+  left: 140px;
+}
+.silhouette.sydney {
+  right: 140px;
+}
+/* 
   // 3.4 CATEGORY
   // -------------------------------------------------- */
-
 
 /*
 // END: PAGE STYLES
 // -------------------------------------------------- */
-
-
 
 /*
 // 4. NAVBARS
@@ -350,8 +338,6 @@ body .h3, body .h4, body .h5, body .h6 {
 // END: NAVBARS
 // -------------------------------------------------- */
 
-
-
 /*
 // 5. BUTTONS
 // -------------------------------------------------- */
@@ -359,8 +345,6 @@ body .h3, body .h4, body .h5, body .h6 {
 /*
 // END: BUTTONS
 // -------------------------------------------------- */
-
-
 
 /*
 // 6. MODALS
@@ -370,7 +354,6 @@ body .h3, body .h4, body .h5, body .h6 {
 // END: MODALS
 // -------------------------------------------------- */
 
-
 /*
 // 7. PLUGINS
 // -------------------------------------------------- */
@@ -379,7 +362,6 @@ body .h3, body .h4, body .h5, body .h6 {
 // END: PLUGINS
 // -------------------------------------------------- */
 
-
 /*
 // 8. MEDIA QUERIES
 // -------------------------------------------------- */
@@ -387,5 +369,4 @@ body .h3, body .h4, body .h5, body .h6 {
 /*
 // END: MEDIA QUERIES
 // -------------------------------------------------- */
-
 
