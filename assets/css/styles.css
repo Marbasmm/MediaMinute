@@ -74,6 +74,14 @@ body .h6 {
   color: inherit;
   line-height: 40px;
 }
+/*
+// END: MAIN LAYOUT STYLES
+// -------------------------------------------------- */
+
+/*
+// 2. GENERAL STYLES
+// -------------------------------------------------- */
+
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -88,18 +96,20 @@ body .h6 {
   /*Workaraund for non-resposive images*/
   width: 100%;
 }
-/*
-// END: MAIN LAYOUT STYLES
-// -------------------------------------------------- */
-
-/*
-// 2. GENERAL STYLES
-// -------------------------------------------------- */
-
 #top-bar {
   background-color: white;
   padding: 10px 0;
   text-align: center;
+}
+.btn {
+  border: none;
+}
+.btn-danger:link,
+.btn-danger:visited {
+  background-color: #27282c;
+}
+.btn-danger:hover {
+  background-color: #f36525;
 }
 /*
 // END: GENERAL STYLES
@@ -269,7 +279,7 @@ body .h6 {
   -moz-border-radius: 10px;
   text-align: center;
   padding: 20px 10px;
-  width: 40%;
+  width: 50%;
   margin: 30px auto 0 auto;
 }
 .category-selector table {
@@ -282,9 +292,12 @@ body .h6 {
 .category-selector table a p {
   font-size: 12px;
   margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #27282c;
 }
 .category-selector table a:link p {
-  color: #4a4c55;
+  color: #27282c;
 }
 .category-selector table a:hover p {
   color: #f16524;
@@ -310,6 +323,73 @@ body .h6 {
 .category-selector a.button:hover {
   color: white;
   background-color: #f16524;
+}
+.article-selector {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  /**/
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  margin: 30px auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.local-nav {
+  width: 7%;
+  float: left;
+}
+.local-nav-detail {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #cccccc;
+  overflow: hidden;
+}
+.detail:hover {
+  cursor: pointer;
+}
+.article-details {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  /**/
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  margin: 30px auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.article-content {
+  width: 100%;
+  text-align: justify;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+.article-content h3 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.article-content p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.article-content img {
+  float: left;
+  padding: 10px 20px 10px 0;
+}
+.back-details {
+  float: left;
+}
+.share-details {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
 }
 .silhouette {
   position: absolute;
@@ -358,6 +438,58 @@ body .h6 {
 // 7. PLUGINS
 // -------------------------------------------------- */
 
+/* -- IMAGE GRID -- */
+
+.grid-container {
+  width: 93%;
+  float: right;
+}
+ul.rig {
+  list-style: none;
+}
+ul.rig li {
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+}
+ul.rig li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+ul.rig li div {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ul.rig li h3 {
+  margin: 0 0 0 0;
+  color: white;
+  font-weight: 300;
+}
+ul.rig li p {
+  font-size: 12px;
+  color: #cccccc;
+  margin: 0;
+  line-height: 12px;
+}
+/* class for 1 column */
+
+ul.rig.columns-1 li {
+  width: 85%;
+  /* this value + 2.5 should = 50% */
+
+}
+/* class for 4 columns */
+
+ul.rig.columns-4 li {
+  width: 21%;
+  /* this value + 2.5 should = 25% */
+
+}
 /*
 // END: PLUGINS
 // -------------------------------------------------- */
