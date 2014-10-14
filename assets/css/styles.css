@@ -288,6 +288,7 @@ body .h6 {
 .category-selector table {
   margin-top: 15px;
   text-align: center;
+  width: 100%;
 }
 .category-selector table a img {
   opacity: 0.8;
