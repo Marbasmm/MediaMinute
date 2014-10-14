@@ -335,7 +335,7 @@ body .h6 {
   /**/
   text-align: center;
   padding: 15px 10px 10px 10px;
-  width: 58%;
+  width: 55%;
   margin: 30px auto 0 auto;
   position: relative;
   overflow: hidden;
@@ -363,7 +363,7 @@ body .h6 {
   /**/
   text-align: center;
   padding: 10px;
-  width: 70%;
+  width: 60%;
   margin: 30px auto 0 auto;
   position: relative;
   overflow: hidden;
@@ -493,7 +493,7 @@ ul.rig li img {
 ul.rig li div {
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 0;
   padding-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -521,6 +521,14 @@ ul.rig.columns-2 li {
   /*width: 47.5%;*/
   width: 43.5%;
   /* this value + 2.5 should = 50% */
+
+}
+/* class for 3 columns */
+
+ul.rig.columns-3 li {
+  /*width: 30.83%;*/
+  width: 28.79%;
+  /* this value + 2.5 should = 33% */
 
 }
 /* class for 4 columns */
