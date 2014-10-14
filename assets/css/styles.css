@@ -391,6 +391,35 @@ body .h6 {
   display: inline-block;
   float: right;
 }
+.end-details {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+  margin-left: 15px;
+}
+.time-reminder {
+  position: absolute;
+  bottom: 20%;
+  right: 32%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+  width: 30%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.time-reminder div {
+  width: 80%;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+.time-reminder div a {
+  margin: 0 10px;
+}
 .silhouette {
   position: absolute;
   bottom: 0;

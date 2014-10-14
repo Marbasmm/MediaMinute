@@ -274,9 +274,13 @@
 
                     <div class="local-nav-detail">
 
-                        <a href="#" class="back-details btn btn-danger"> <span class="glyphicon glyphicon-chevron-left"></span> Back</a> 
+                        <a href="#" class="back-details btn btn-danger"> <span class="glyphicon glyphicon-chevron-left"></span> Articles</a>
 
-                        <a href="#" class="share-details btn btn-danger"> <span class="glyphicon glyphicon-chevron-up"></span> Share</a>
+                        <a href="#" class="end-details btn btn-danger"> <span class="glyphicon glyphicon-log-out"></span> End Session</a> 
+
+                        <a href="#" class="share-details btn btn-danger"> <span class="glyphicon glyphicon-chevron-up"></span> Share with others</a>
+
+                       
 
                     </div>
 
@@ -297,7 +301,22 @@ Aliquam id ante condimentum, cursus diam non, dapibus nunc. Phasellus luctus tel
                     </div>
 
 
+  
+
+
+
+
+
+
+
+
                 </div>
+
+
+
+
+
+
                
                 
                 </div>
@@ -309,6 +328,20 @@ Aliquam id ante condimentum, cursus diam non, dapibus nunc. Phasellus luctus tel
                 
 
             </div>
+
+                     <div id="reminder" class="time-reminder">
+                        <h2>TIME IS ALMOST UP!</h2>
+                        <p>You have one minute left</p>
+                        <div>
+                            <a href="#" class="ignore btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Ignore
+                            </a>
+
+                            <a href="#" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-log-out"></span> End Session
+                            </a>
+                        </div>
+                    </div>
 
 	    </section>
 
@@ -354,6 +387,7 @@ Aliquam id ante condimentum, cursus diam non, dapibus nunc. Phasellus luctus tel
             $("#categories").hide();
             $("#articles").hide();
             $("#details").hide();
+            $("#reminder").hide();
 
             $("#start").click(function(){
                 $("#start").hide();
@@ -379,6 +413,13 @@ Aliquam id ante condimentum, cursus diam non, dapibus nunc. Phasellus luctus tel
                 $("#details").hide();
                 $("#articles").show();
             });
+            $(".end-details").click(function(){
+                $("#reminder").show();
+            });
+            $(".ignore").click(function(){
+                $("#reminder").hide();
+            });
+
         });
     </script>
 
