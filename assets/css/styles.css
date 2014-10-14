@@ -215,6 +215,9 @@ body .h6 {
 #interactive-area {
   background: url(../images/IA-bkg.jpg) repeat-x top;
 }
+#start {
+  margin-top: 5%;
+}
 .start-button {
   background: url(../images/start-button.png) no-repeat center;
   width: 140px;
@@ -230,7 +233,7 @@ body .h6 {
   padding: 0 10px;
 }
 .time-selector {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -273,7 +276,7 @@ body .h6 {
   margin: 0 auto;
 }
 .category-selector {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -325,14 +328,14 @@ body .h6 {
   background-color: #f16524;
 }
 .article-selector {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   /**/
   text-align: center;
-  padding: 10px;
-  width: 70%;
+  padding: 15px 10px 10px 10px;
+  width: 58%;
   margin: 30px auto 0 auto;
   position: relative;
   overflow: hidden;
@@ -353,7 +356,7 @@ body .h6 {
   cursor: pointer;
 }
 .article-details {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -399,9 +402,9 @@ body .h6 {
 }
 .time-reminder {
   position: absolute;
-  bottom: 20%;
-  right: 32%;
-  background: rgba(255, 255, 255, 0.9);
+  top: 40%;
+  right: 33%;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -490,7 +493,7 @@ ul.rig li img {
 ul.rig li div {
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  bottom: 10px;
   padding-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -508,7 +511,15 @@ ul.rig li p {
 /* class for 1 column */
 
 ul.rig.columns-1 li {
-  width: 85%;
+  width: 87.5%;
+  /* this value + 2.5 should = 50% */
+
+}
+/* class for 2 columns */
+
+ul.rig.columns-2 li {
+  /*width: 47.5%;*/
+  width: 43.5%;
   /* this value + 2.5 should = 50% */
 
 }
