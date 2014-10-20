@@ -428,12 +428,15 @@ body .h6 {
   position: absolute;
   bottom: 0;
   z-index: -1;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
 }
 .silhouette.melbourne {
-  left: 140px;
+  left: 0;
 }
 .silhouette.sydney {
-  right: 140px;
+  right: 0;
 }
 /* 
   // 3.4 CATEGORY
@@ -538,6 +541,28 @@ ul.rig.columns-4 li {
   width: 21%;
   /* this value + 2.5 should = 25% */
 
+}
+#video1 {
+  min-width: 105%;
+  min-height: 105%;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  left: -10px;
+  top: -10px;
+  opacity: 0.25;
+}
+#video2 {
+  min-width: 105%;
+  min-height: 105%;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  left: -12px;
+  top: -10px;
+  opacity: 0.25;
 }
 /*
 // END: PLUGINS
